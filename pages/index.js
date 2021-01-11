@@ -13,7 +13,6 @@ export default function Home() {
         title="Blade Link 3D Printers &mdash; "
         description="Los mejores diseños 3D"
       />
-      <FullCarrousel />
 
       <div className="publicidad">
         <Advertisement unit="leaderboard">
