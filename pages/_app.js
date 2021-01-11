@@ -1,5 +1,6 @@
 import React, { useMemo, useState, useEffect } from "react";
 import Router from "next/router";
+import "semantic-ui-css/semantic.min.css";
 
 import "../styles/sass/main.scss";
 
