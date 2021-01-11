@@ -27,13 +27,7 @@ export default function HeaderTop(props) {
   const onShowModal = () => setShowModal(true);
   const onCloseModal = () => setShowModal(false);
   const { visible, setVisible } = props;
-  const onShow = () => {
-    if (visible === true) {
-      setVisible(false);
-    } else {
-      setVisible(true);
-    }
-  };
+
   useEffect(() => {
     (async () => {
       const response = await getMeApi(logout);
@@ -48,7 +42,6 @@ export default function HeaderTop(props) {
           <Grid.Column textAlign="center">
             <Image src="/bladelink.png" size="small" centered />
             <p>Blade Link Argentina</p>
-            <Button circular floated="left" icon="settings" onClick={onShow} />
           </Grid.Column>
 
           <Grid.Column verticalAlign="middle">

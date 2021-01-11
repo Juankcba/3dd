@@ -15,37 +15,23 @@ import {
 } from "semantic-ui-react";
 import { faDragon } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import FullCarrousel from "../components/FullCarrousel";
 export default function BasicLayout(props) {
   const { children, className, title } = props;
   const [visible, setVisible] = useState(true);
-
+  const onShow = () => {
+    if (visible === true) {
+      setVisible(false);
+    } else {
+      setVisible(true);
+    }
+  };
   return (
     <div className="basic-layout">
       <div className="body">
         <Container className="container">
-          <HeaderTop setVisible={setVisible} visible={visible} />
-
-          <Sidebar.Pushable
-            as={Segment}
-            style={{ overflow: "hidden", height: "100hv", marginTop: "-1rem" }}
-          >
-            <Sidebar
-              as={Menu}
-              animation="scale down"
-              direction="left"
-              icon="labeled"
-              inverted
-              vertical
-              visible={visible}
-              width="thin"
-            >
-              <Navigation />
-            </Sidebar>
-            <Sidebar.Pusher dimmed={false && visible}>
-              <Segment fluid>{children}</Segment>
-            </Sidebar.Pusher>
-          </Sidebar.Pushable>
+          <HeaderTop />
+          <FullCarrousel />
         </Container>
       </div>
     </div>

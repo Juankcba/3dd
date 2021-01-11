@@ -1,8 +1,12 @@
 import React, { useMemo, useState, useEffect } from "react";
 import Router from "next/router";
 
-import "../styles/sass/main.scss";
 import "semantic-ui-css/semantic.min.css";
+import "react-multi-carousel/lib/styles.css";
+import "../styles/sass/main.scss";
+
+import "@fortawesome/fontawesome-free/js/fontawesome";
+import "@fortawesome/fontawesome-free/js/solid";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

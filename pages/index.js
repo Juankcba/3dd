@@ -4,8 +4,7 @@ import BasicLayout from "../Layout/BasicLayout";
 import Ad from "../Layout/Ad";
 import Seo from "../components/Seo";
 import { Header, Advertisement, Button } from "semantic-ui-react";
-import ListProductos from "../components/Products/ListProductos";
-import FullCarrousel from "../components/FullCarrousel";
+
 export default function Home() {
   return (
     <BasicLayout className="home">
