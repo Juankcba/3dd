@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+
 import { Card, Icon, Image, Dimmer, Loader, Segment } from "semantic-ui-react";
 import { getImagenes } from "../../api/carrousel";
 export default function FullCarrousel() {
